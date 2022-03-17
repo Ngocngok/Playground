@@ -1,0 +1,160 @@
+
+lvl 1.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 107
+  size: 1089, 1936
+  orig: 1089, 1936
+  offset: 0, 0
+  index: -1
+Ban_ghe
+  rotate: true
+  xy: 1093, 1026
+  size: 1017, 639
+  orig: 1017, 639
+  offset: 0, 0
+  index: -1
+Khan_trai_ban
+  rotate: true
+  xy: 1734, 1362
+  size: 681, 302
+  orig: 681, 302
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 1481, 421
+  size: 363, 603
+  orig: 363, 603
+  offset: 0, 0
+  index: -1
+body_man
+  rotate: false
+  xy: 1093, 387
+  size: 386, 637
+  orig: 386, 637
+  offset: 0, 0
+  index: -1
+chicken
+  rotate: true
+  xy: 1760, 324
+  size: 95, 74
+  orig: 95, 74
+  offset: 0, 0
+  index: -1
+dia
+  rotate: false
+  xy: 700, 58
+  size: 152, 47
+  orig: 152, 47
+  offset: 0, 0
+  index: -1
+glass1
+  rotate: true
+  xy: 1846, 484
+  size: 56, 125
+  orig: 56, 125
+  offset: 0, 0
+  index: -1
+glass2
+  rotate: true
+  xy: 1846, 484
+  size: 56, 125
+  orig: 56, 125
+  offset: 0, 0
+  index: -1
+hair
+  rotate: false
+  xy: 1380, 137
+  size: 115, 248
+  orig: 115, 248
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 1678, 168
+  size: 76, 130
+  orig: 76, 131
+  offset: 0, 1
+  index: -1
+head_man
+  rotate: false
+  xy: 1846, 862
+  size: 133, 163
+  orig: 133, 163
+  offset: 0, 0
+  index: -1
+leg_left
+  rotate: true
+  xy: 358, 3
+  size: 102, 164
+  orig: 102, 164
+  offset: 0, 0
+  index: -1
+leg_left2
+  rotate: false
+  xy: 1734, 1133
+  size: 256, 227
+  orig: 256, 227
+  offset: 0, 0
+  index: -1
+leg_left_man
+  rotate: false
+  xy: 524, 19
+  size: 174, 86
+  orig: 174, 86
+  offset: 0, 0
+  index: -1
+leg_right
+  rotate: true
+  xy: 2, 2
+  size: 103, 354
+  orig: 103, 354
+  offset: 0, 0
+  index: -1
+leg_right2
+  rotate: true
+  xy: 1734, 1027
+  size: 104, 229
+  orig: 104, 231
+  offset: 0, 0
+  index: -1
+leg_right_man
+  rotate: false
+  xy: 1497, 139
+  size: 179, 159
+  orig: 179, 160
+  offset: 0, 1
+  index: -1
+leg_right_man2
+  rotate: false
+  xy: 1093, 146
+  size: 285, 239
+  orig: 285, 239
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1497, 300
+  size: 261, 119
+  orig: 271, 124
+  offset: 5, 0
+  index: -1
+nap
+  rotate: true
+  xy: 1846, 542
+  size: 156, 121
+  orig: 156, 121
+  offset: 0, 0
+  index: -1
+smoker
+  rotate: false
+  xy: 1846, 700
+  size: 146, 160
+  orig: 153, 171
+  offset: 2, 6
+  index: -1

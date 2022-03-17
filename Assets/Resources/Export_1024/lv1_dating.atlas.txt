@@ -1,0 +1,90 @@
+
+lv1_dating.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 427, 361
+  size: 397, 661
+  orig: 397, 661
+  offset: 0, 0
+  index: -1
+body_man
+  rotate: false
+  xy: 2, 324
+  size: 423, 698
+  orig: 423, 698
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 515, 233
+  size: 126, 271
+  orig: 126, 271
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 826, 405
+  size: 83, 142
+  orig: 84, 143
+  offset: 0, 1
+  index: -1
+head_man
+  rotate: true
+  xy: 826, 490
+  size: 146, 178
+  orig: 146, 178
+  offset: 0, 0
+  index: -1
+leg_left
+  rotate: true
+  xy: 826, 638
+  size: 112, 180
+  orig: 112, 180
+  offset: 0, 0
+  index: -1
+leg_left2
+  rotate: true
+  xy: 265, 41
+  size: 281, 248
+  orig: 281, 248
+  offset: 0, 0
+  index: -1
+leg_left_man
+  rotate: false
+  xy: 826, 752
+  size: 191, 94
+  orig: 191, 94
+  offset: 0, 0
+  index: -1
+leg_right
+  rotate: false
+  xy: 826, 15
+  size: 113, 388
+  orig: 113, 388
+  offset: 0, 0
+  index: -1
+leg_right2
+  rotate: true
+  xy: 515, 117
+  size: 114, 251
+  orig: 114, 253
+  offset: 0, 0
+  index: -1
+leg_right_man
+  rotate: false
+  xy: 826, 848
+  size: 196, 174
+  orig: 196, 175
+  offset: 0, 1
+  index: -1
+leg_right_man2
+  rotate: true
+  xy: 2, 10
+  size: 312, 261
+  orig: 312, 261
+  offset: 0, 0
+  index: -1
