@@ -21,15 +21,16 @@ public class Erasable : MonoBehaviour
 
     void Start()
     {
-        thisMat = GetComponent<MeshRenderer>().material;
-        mainTex = thisMat.mainTexture;
+        thisMat = GetComponent<SpriteRenderer>().material;
+        //mainTex = thisMat.GetTexture("_MainTex");
+        mainTex = GetComponent<SpriteRenderer>().sprite.texture;
 
         //get copy of draw mesh material
         tmpMat = new Material(shader);
         maskRenderTexture = new RenderTexture(mainTex.width, mainTex.height, 24, RenderTextureFormat.ARGB32);
         tmpMat.SetTexture("_RenderTex", maskRenderTexture);
         tmpMat.SetVector("_ScaleFactor", new Vector2(eraserGameObject.transform.localScale.x / transform.localScale.x, eraserGameObject.transform.localScale.y / transform.localScale.y));
-        tmpMat.SetTexture("_EraserTex", eraserTexture);
+        tmpMat.SetTexture("_BrushTex", eraserTexture);
 
         thisMat.SetTexture("_RenderTex", maskRenderTexture);
 
@@ -44,13 +45,12 @@ public class Erasable : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             DrawOnRenderTexture();
-            Debug.Log(maskRenderTexture);
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            RenderTexture.active = maskRenderTexture;
-            GL.Clear(true, true, Color.clear);
-            RenderTexture.active = null;
+            //RenderTexture.active = maskRenderTexture;
+            //GL.Clear(true, true, Color.clear);
+            //RenderTexture.active = null;
         }
     }
 
@@ -61,9 +61,14 @@ public class Erasable : MonoBehaviour
 
         eraserGameObject.transform.position = eraserPos;
 
-        tmpMat.SetVector("_EraserPos", eraserPos - transform.position);
+        tmpMat.SetVector("_BrushPos", eraserPos - transform.position);
 
         tmpRenderTexture = RenderTexture.GetTemporary(mainTex.width, mainTex.height, 24, RenderTextureFormat.ARGB32);
+
+        RenderTexture.active = tmpRenderTexture;
+        GL.Clear(true, true, Color.clear);
+        RenderTexture.active = null;
+
         Graphics.Blit(maskRenderTexture, tmpRenderTexture, tmpMat, -1);
 
         Graphics.Blit(tmpRenderTexture, maskRenderTexture);
