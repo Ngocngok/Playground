@@ -39,12 +39,20 @@ public class Erasable : MonoBehaviour
         RenderTexture.active = null;
     }
 
+    private Vector3 prevPos;
+
+    private Vector3 currentPos;
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
+            prevPos = Camera.main.ScreenToWorldPoint(Input.mousePosition + Vector3.back * Camera.main.transform.position.z);
+        else if (Input.GetMouseButton(0))
         {
+            currentPos = Camera.main.ScreenToWorldPoint(Input.mousePosition + Vector3.back * Camera.main.transform.position.z);
             DrawOnRenderTexture();
+            prevPos = currentPos;
         }
         else if (Input.GetMouseButtonUp(0))
         {
@@ -57,11 +65,11 @@ public class Erasable : MonoBehaviour
     private void DrawOnRenderTexture()
     {
         eraserGameObject.SetActive(true);
-        Vector3 eraserPos = Camera.main.ScreenToWorldPoint(Input.mousePosition + Vector3.back * Camera.main.transform.position.z);
 
-        eraserGameObject.transform.position = eraserPos;
+        eraserGameObject.transform.position = currentPos;
 
-        tmpMat.SetVector("_BrushPos", eraserPos - transform.position);
+        tmpMat.SetVector("_BrushPos", currentPos - transform.position);
+        tmpMat.SetVector("_PrevPos", prevPos - transform.position);
 
         tmpRenderTexture = RenderTexture.GetTemporary(mainTex.width, mainTex.height, 24, RenderTextureFormat.ARGB32);
 
